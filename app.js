@@ -3,7 +3,7 @@ const debug = require('debug')('app');
 const chalk = require('chalk');
 const morgan = require('morgan');
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 4000; //ถ้า 3000 ใช้ไม่ได้จะใช้ 4000
 const path = require('path');
 
 app.use(morgan('combined'));
@@ -13,6 +13,6 @@ app.get("/", (req, res) => {
     res.send("Hello World");
 });
 
-app.listen(port, () => {
-    debug("Listening on port " + chalk.green(port));
+app.listen(PORT, () => {
+    debug("Listening on port " + chalk.green(PORT));
 });
