@@ -1,29 +1,32 @@
-{
-    "products": [
-      {
+[
+    {
+        "id": 0,
         "productTitle": "น้ำยาล้างจาน 1",
         "productDescription": "น้ำยาล้างจาน 300ML",
         "productPrice": "30"
-      },
-      {
+    },
+    {
+        "id": 1,
         "productTitle": "น้ำยาล้างจาน 2",
         "productDescription": "น้ำยาล้างจาน 400ML",
         "productPrice": "35"
-      },
-      {
+    },
+    {
+        "id": 2,
         "productTitle": "น้ำยาล้างจาน 3",
         "productDescription": "น้ำยาล้างจาน 500ML",
         "productPrice": "40"
-      },
-      {
+    },
+    {
+        "id": 3,
         "productTitle": "น้ำยาล้างจาน 4",
         "productDescription": "น้ำยาล้างจาน 600ML",
         "productPrice": "45"
-      },
-      {
+    },
+    {
+        "id": 4,
         "productTitle": "น้ำยาล้างจาน 5",
         "productDescription": "น้ำยาล้างจาน 700ML",
         "productPrice": "50"
-      }
-    ]
-  }
+    }
+]
