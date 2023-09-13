@@ -5,12 +5,18 @@ const morgan = require('morgan');
 const app = express();
 const PORT = process.env.PORT || 4000; //ถ้า 3000 ใช้ไม่ได้จะใช้ 4000
 const path = require('path');
+const productRouter = express.Router();
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname,"/public/")));
 
 app.set("views","./src/views");
 app.set("view engine", "ejs");
+
+app.use("/products", productRouter);
+productRouter.route("/").get((req,res)=>{
+    res.send("Products");
+})
 
 app.get("/", (req, res) => {
     res.render('index', {username: 'M', customers: ["A","B","C"]});
